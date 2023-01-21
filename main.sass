@@ -1,0 +1,103 @@
+@import mainpage
+@import fontface
+@import atoms
+@import popups
+@import map
+@import gallery
+body
+    margin: 0
+    overflow-x: hidden
+ul
+    margin: 0 !important
+button
+    background-color: $primary-light
+    border-radius: 8px
+    padding: 12px 16px
+    border: none
+    cursor: pointer
+    transition: .3s
+    p
+        font-size: 16px
+        white-space: nowrap
+        margin: 0
+        color: $primary
+        font-weight: 900 !important
+        text-transform: uppercase
+    &:hover
+        background-color: $primary
+        transition: .3s
+        p 
+            color: white
+
+.map
+    //width: 100% !important
+    border: none !important
+    // canvas 
+    //     width: 100% !important
+
+.container
+   width: auto !important
+   max-width: 100% !important
+
+.sh-main-container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 64px 16px
+
+.sh-fill-container
+    padding: 64px 0
+    overflow: hidden
+
+.sh-sm-container
+    max-width: 800px
+    margin: 0 auto
+    padding: 64px 16px
+
+.sh-main-container-primary
+    width: 100%
+    padding: 64px 16px
+    background-color: $primary-light
+
+.sh-icon-column
+    display: flex
+    align-items: center
+    h3 
+        font-size: 24px
+        margin-top: 0px
+    p   
+        margin: 0
+    img
+        height: 100px
+        margin-right: 24px
+    @media screen and ( max-width: 600px )
+        align-items: flex-start
+        img
+            height: 56px
+
+.sh-footer
+    background-color: white
+.sh-footer-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 1200px
+    margin: 24px auto
+    padding: 0 16px
+    img
+        width: 160px
+        object-fit: contain
+    a 
+        text-decoration: none !important
+        color: $black
+        cursor: pointer
+        &:hover
+            color: $blue-accent
+    @media screen and ( max-width: 768px )
+        flex-direction: column
+        text-align: center !important
+        div
+            margin-right: 0 !important
+            align-items: center !important
+        
+        
+
